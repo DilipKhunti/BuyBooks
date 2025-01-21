@@ -3,3 +3,4 @@ backend/.env
 *.log
 *.tmp
 test/
+.vscode/
