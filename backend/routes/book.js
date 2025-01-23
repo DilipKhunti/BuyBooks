@@ -7,8 +7,8 @@ const { authenticateToken } = require("./userAuth");
 router.post("/add-book", authenticateToken, async (req, res) => {
   try {
     const { id } = req.headers; // Assuming 'id' is the user ID passed in the headers
-    const user = await User.findById(id);
-
+    
+    // const user = await User.findById(id);
     // Uncomment if you need admin access control
     // if (user.role !== "admin") {
     //   return res.status(400).json({ message: "You don't have access to perform this task" });
